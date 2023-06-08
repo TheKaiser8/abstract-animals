@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Sparrow extends Animal {
+public class Sparrow extends Animal implements CanFly {
 
     public Sparrow(String name) {
         super(name);
@@ -14,5 +14,10 @@ public class Sparrow extends Animal {
     @Override
     public void noise() {
         System.out.println("Cip!");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("Sto volando!!!");
     }
 }

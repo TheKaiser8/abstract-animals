@@ -33,5 +33,14 @@ public class Main {
             a.noise();
             System.out.println("\n");
         }
+
+        // stampo metodi derivanti da interfacce
+        Eagle eagle = new Eagle("Rapax");
+        System.out.print("Sono " + eagle.getName() + " e ");
+        eagle.fly();
+
+        Dolphin dolphin = new Dolphin("Dolphy");
+        System.out.print("Sono " + dolphin.getName() + " e ");
+        dolphin.swim();
     }
 }

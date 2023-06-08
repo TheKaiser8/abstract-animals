@@ -1,6 +1,15 @@
 package org.lessons.java.animals;
 
 public class Main {
+
+    public static void makeFly(CanFly animal) {
+        animal.fly();
+    }
+
+    public static void makeSwim(CanSwim animal) {
+        animal.swim();
+    }
+
     public static void main(String[] args) {
         Animal[] noahsArk = new Animal[4];
         noahsArk[0] = new Dog("Tom");
@@ -42,5 +51,14 @@ public class Main {
         Dolphin dolphin = new Dolphin("Dolphy");
         System.out.print("Sono " + dolphin.getName() + " e ");
         dolphin.swim();
+
+        System.out.println("\n");
+
+        // output con utilizzo dei metodi statici
+        System.out.print("Sono " + eagle.getName() + " e ");
+        makeFly(eagle);
+
+        System.out.print("Sono " + dolphin.getName() + " e ");
+        makeSwim(dolphin);
     }
 }
